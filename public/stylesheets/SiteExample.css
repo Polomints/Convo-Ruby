@@ -1,0 +1,56 @@
+body {
+	
+}
+
+img.floatLeft { 
+    float: left; 
+    margin: 4px; 
+}
+img.floatRight { 
+    float: right; 
+    margin: 4px; 
+}
+
+h2 {
+	font-size: 25px;
+	color: #D80000;
+	font-weight: bold;
+	margin-top: 0px;
+	margin-bottom: 3px;
+} 
+
+h3 {
+	font-size: 16px;
+	color: #3333FF;
+	font-weight: bold;
+	margin-top: 0px;
+	margin-bottom: 3px;
+} 
+
+p { font-family: arial; font-size: 16px; } 
+
+	h2.BoxHeaders {
+	font-size: 25px;
+	color: #D80000;
+	font-weight: bold;
+	margin-top: 0px;
+	margin-bottom: 3px;
+}
+
+h6.footertext {
+	font-size: 10px;
+	color: #ffffff;
+	font-weight: bold;
+	margin-top: 0px;
+	margin-bottom: 3px;
+}  
+
+h2.BoxHeaders {
+	font-size: 20px;
+	color: #D80000;
+	font-weight: bold;
+	margin-top: 0px;
+	margin-bottom: 3px;
+}  
+
+
