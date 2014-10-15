@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Convo</title>
+<%= stylesheet_link_tag :all %>
+<%= javascript_include_tag :defaults %>
+<%= csrf_meta_tag %>
+</head>
+<body>
+<div id='header'>
+<!-- Header Image Displayes here -->
+</div>
+<div id='menu'>
+<!-- Header Image Displayes here -->
+<div id="navbar">
+<ul>
+
+
+<!------  authlogic link to register  ------>
+
+
+
+ <% if current_user %>
+
+<li><%= link_to 'Current Conversations', posts_path %></li>
+<li><%= link_to 'Create New Post', new_post_path %></li>
+
+        <%= link_to "Edit Profile", edit_user_path(current_user.id)%>
+        <%= link_to "Logout", :logout%>
+        <% else %>
+        <%= link_to "Register", new_user_path%> |
+        <%= link_to "Login", :login %>
+
+
+        <% end %>
+
+
+
+</div>
+</div>
+<div id='container'>
+<div id='content'>
+<%= yield %>
+</div>
+<div id='first-column'>
+<div class="searchbox">
+<h2 class="BoxHeaders"><font color="white">Search Conversations</font></h2>
+<input type="text" name="search" /><input type="submit" value="Search" />
+</div>
+<div class="box">
+<h2 class="BoxHeaders"><font color="white">Trending Topics</font></h2>
+<ul>
+<li><a href="google.com">Politics</a></li></br>
+<li><a href="google.com">Garda Checkpoints</a></li>                                       
+</ul>
+<script type="text/javascript">
+RotateImages(1,0);
+</script>
+</div>
+
+
+
+</div>
+</div>
+
+
+
+<div id='footer'>
+
+</div>
+
+</body>
+</html>
+

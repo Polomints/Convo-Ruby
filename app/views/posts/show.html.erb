@@ -1,0 +1,74 @@
+<html>
+<head>
+<style type="text/css">
+body
+{
+
+}
+h1
+{
+margin-top:30px;
+color:orange;
+text-align:center;
+}
+
+
+h1
+{
+margin-top:30px;
+color:orange;
+text-align:center;
+}
+
+
+p
+{
+margin-top:30px;
+font-family:"Times New Roman";
+font-size:20px;
+width:100%;
+}
+
+
+
+
+</style>
+</head>
+
+<body>
+
+
+<p class="notice"><%= notice %></p>
+ 
+
+<fieldset>
+<p>
+  <b>Name:</b>
+  <%= @post.name %>
+</p>
+ 
+<p>
+  <b>Title:</b>
+  <%= @post.title %>
+</p>
+ 
+<p>
+  <b>Content:</b>
+  <%= @post.content %>
+</p>
+ 
+</fieldset>
+ 
+<h2>Comments</h2>
+<%= render @post.comments %>
+ 
+<h2>Add a comment:</h2>
+<%= render "comments/form" %>
+ 
+ 
+
+<%= link_to 'Back to Posts', posts_path %> |
+
+
+</body>
+</head>
